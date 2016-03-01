@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">COMP3275A1</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="landingList">
+        <item>UI Components</item>
+        <item>Layouts</item>
+        <item>Dialogs</item>
+        <item>Toast and Snackbar</item>
+        <item>Activity Bundle</item>
+        <item>Activity for Result</item>
+        <item>Custom Adapter</item>
+        <item>Fragment</item>
+        <item>Action Bar and Menus</item>
+        <item>Master/Detail Layout</item>
+    </string-array>
+    <string name="title_activity_uicomponents">UI Components</string>
+    <string name="title_activity_layouts">Layouts</string>
+    <string name="title_activity_dialogs">Dialogs</string>
+    <string name="title_activity_toast_and_snackbar">Toast Snackbar</string>
+    <string name="title_activity_activity_bundle">Activity Bundle</string>
+    <string name="title_activity_activity_for_result">Activity For Result</string>
+    <string name="title_activity_custom_adapter">Custom Adapter</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="title_activity_action_bar_and_menus">Action Bar And Menus</string>
+    <string name="title_activity_master_detail_layout">Master Detail Layout</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+</resources>
