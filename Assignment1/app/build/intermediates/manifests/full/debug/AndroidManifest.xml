@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logan20.assignment1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.logan20.assignment1.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.logan20.assignment1.UIComponents"
+            android:label="@string/title_activity_uicomponents"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.Layouts"
+            android:label="@string/title_activity_layouts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.Dialogs"
+            android:label="@string/title_activity_dialogs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ToastAndSnackbar"
+            android:label="@string/title_activity_toast_and_snackbar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ActivityBundle"
+            android:label="@string/title_activity_activity_bundle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ActivityForResult"
+            android:label="@string/title_activity_activity_for_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.CustomAdapter"
+            android:label="@string/title_activity_custom_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.Fragment"
+            android:label="@string/title_activity_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ActionBarAndMenus"
+            android:label="@string/title_activity_action_bar_and_menus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logan20.assignment1.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="com.logan20.assignment1.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logan20.assignment1.ItemListActivity" />
+        </activity>
+    </application>
+
+</manifest>
