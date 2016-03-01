@@ -12,6 +12,12 @@
         <item>Action Bar and Menus</item>
         <item>Master/Detail Layout</item>
     </string-array>
+    <string-array name="toast_snack_list">
+        <item>Toast Short</item>
+        <item>Toast Long</item>
+        <item>SnackBar</item>
+        <item>SnackBar Action</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>

@@ -77,4 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void viewList(View view){
+        Intent i = new Intent(MainActivity.this, ToastAndSnackbar.class);
+        startActivity(i);
+    }
 }

@@ -12,4 +12,96 @@
     tools:context="com.logan20.assignment1.UIComponents"
     tools:showIn="@layout/activity_uicomponents">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Registration"
+        android:id="@+id/txt_reg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form"
+        android:id="@+id/txt_form"
+        android:layout_below="@+id/txt_reg"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A test registration form to test UI Elements"
+        android:id="@+id/textView"
+        android:layout_below="@+id/txt_form"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Button"
+        android:id="@+id/btn_simp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/txt_reg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:ems="10"
+        android:id="@+id/txt_username"
+        android:layout_below="@+id/btn_simp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txt_password"
+        android:layout_below="@+id/txt_username"
+        android:layout_centerHorizontal="true"
+        android:text="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_email"
+        android:layout_below="@+id/txt_password"
+        android:layout_alignStart="@+id/txt_password"
+        android:text="Email" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/rbtn_female"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/rbtn_male"
+        android:layout_alignStart="@+id/btn_simp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/rbtn_male"
+        android:checked="false"
+        android:layout_below="@+id/txt_email"
+        android:layout_toStartOf="@+id/btn_simp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/btn_save"
+        android:layout_below="@+id/rbtn_female"
+        android:layout_alignStart="@+id/txt_email"
+        android:layout_alignEnd="@+id/txt_email" />
+
 </RelativeLayout>
