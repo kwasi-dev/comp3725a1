@@ -6,7 +6,7 @@
         <item>UI Components</item>
         <item>Layouts</item>
         <item>Dialogs</item>
-        <item>Toast and Snackbar</item>
+        <item>Toast and SnackBar</item>
         <item>Activity Bundle</item>
         <item>Activity for Result</item>
         <item>Custom Adapter</item>
@@ -14,6 +14,14 @@
         <item>Action Bar and Menus</item>
         <item>Master/Detail Layout</item>
     </string-array>
+
+    <string-array name="toast_snack_list">
+        <item>Toast Short</item>
+        <item>Toast Long</item>
+        <item>SnackBar</item>
+        <item>SnackBar Action</item>
+    </string-array>
+
     <string name="title_activity_uicomponents">UI Components</string>
     <string name="title_activity_layouts">Layouts</string>
     <string name="title_activity_dialogs">Dialogs</string>

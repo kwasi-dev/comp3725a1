@@ -13,9 +13,10 @@
     tools:context="com.logan20.assignment1.ToastAndSnackbar"
     tools:showIn="@layout/activity_toast_and_snackbar"
     android:orientation="vertical">
+
     <ListView
-        android:id="@+id/items_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toast_snack_view"
         android:entries="@array/toast_snack_list"/>
 </LinearLayout>

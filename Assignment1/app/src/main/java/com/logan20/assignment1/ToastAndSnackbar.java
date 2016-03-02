@@ -15,12 +15,10 @@ public class ToastAndSnackbar extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toast_and_snackbar);
 
-        String[] toast_snack = {"TOAST SHORT", "TOAST LONG", "SNACKBAR", "SNACKBAR ACTION"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, toast_snack);
-        ListView lv = (ListView)findViewById(R.id.toast_snack_view);
-        lv.setAdapter(adapter);
-
-        @Override
+        //String[] toast_snack = {"TOAST SHORT", "TOAST LONG", "SNACKBAR", "SNACKBAR ACTION"};
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, toast_snack);
+        //ListView lv = (ListView)findViewById(R.id.toast_snack_view);
+        //lv.setAdapter(adapter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

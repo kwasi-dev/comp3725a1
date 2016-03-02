@@ -17,5 +17,6 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toast_snack_view" />
+        android:id="@+id/toast_snack_view"
+        android:entries="@array/toast_snack_list"/>
 </LinearLayout>

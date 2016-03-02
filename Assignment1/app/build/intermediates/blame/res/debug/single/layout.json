@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_activity_for_result.xml",
         "source": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\src\\main\\res\\layout\\content_activity_for_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "C:\\Users\\Christine\\Documents\\UWI\\COMP3275\\comp3725a1\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_activity_bundle.xml",
