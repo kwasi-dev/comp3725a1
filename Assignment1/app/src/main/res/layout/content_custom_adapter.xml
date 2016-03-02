@@ -12,9 +12,4 @@
     tools:context="com.logan20.assignment1.CustomAdapter"
     tools:showIn="@layout/activity_custom_adapter">
 
-    <ListView
-        android:id="@+id/items_List"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:entries="@array/items_available"/>
 </RelativeLayout>

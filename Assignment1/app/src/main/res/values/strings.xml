@@ -2,7 +2,57 @@
     <string name="app_name">COMP3275A1</string>
     <string name="action_settings">Settings</string>
 
+    <string-array name="landingList">
+        <item>UI Components</item>
+        <item>Layouts</item>
+        <item>Dialogs</item>
+        <item>Toast and Snackbar</item>
+        <item>Activity Bundle</item>
+        <item>Activity for Result</item>
+        <item>Custom Adapter</item>
+        <item>Fragment</item>
+        <item>Action Bar and Menus</item>
+        <item>Master/Detail Layout</item>
+    </string-array>
+
+    <string-array name="colorOptions">
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Indigo</item>
+        <item>Violet</item>
+    </string-array>
+
+    <string-array name="dialogsList">
+        <item>Alert</item>
+        <item>Confirm</item>
+        <item>Date</item>
+        <item>List</item>
+        <item>Multiple Choice List</item>
+    </string-array>
+
+    <string-array name="toast_snack_list">
+        <item>Toast Short</item>
+        <item>Toast Long</item>
+        <item>SnackBar</item>
+        <item>SnackBar Action</item>
+    </string-array>
+    <string-array name="nameList">
+        <item>Christine</item>
+        <item>Kwasi</item>
+    </string-array>
+
+    <string-array name="vowels">
+        <item>A</item>
+        <item>E</item>
+        <item>I</item>
+        <item>O</item>
+        <item>U</item>
+    </string-array>
     <string name="title_activity_uicomponents">UI Components</string>
+    <string name="userInputTitle">Choose a color:</string>
     <string name="title_activity_layouts">Layouts</string>
     <string name="title_activity_dialogs">Dialogs</string>
     <string name="title_activity_toast_and_snackbar">Toast Snackbar</string>
@@ -15,32 +65,6 @@
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
 
-    <string-array name="landingList">
-        <item>UI Components</item>
-        <item>Layouts</item>
-        <item>Dialogs</item>
-        <item>Toast and SnackBar</item>
-        <item>Activity Bundle</item>
-        <item>Activity for Result</item>
-        <item>Custom Adapter</item>
-        <item>Fragment</item>
-        <item>Action Bar and Menus</item>
-        <item>Master/Detail Layout</item>
-    </string-array>
-
-    <string-array name="toast_snack_list">
-        <item>Toast Short</item>
-        <item>Toast Long</item>
-        <item>SnackBar</item>
-        <item>SnackBar Action</item>
-    </string-array>
-
-    <string-array name="items_images">
-        <item>@drawable/laptop_icon</item>
-        <item>@drawable/iphone_icon</item>
-        <item>@drawable/television_icon</item>
-    </string-array>
-
     <string-array name="items_available">
         <item>Dell Laptop</item>
         <item>iPhone</item>
@@ -48,5 +72,26 @@
         <item>LCD Television</item>
     </string-array>
 
-</resources>
+    <string-array name="items_description">
+        <item>A Brand new dell laptop. A bit outdated but still functional</item>
+        <item>A new iPhone 6. Still functional and no extra scratches</item>
+        <item>A new iPhone</item>
+        <item>A new Samsung Smart LCD Television</item>
+    </string-array>
 
+    <string-array name="items_images">
+        <item>@drawable/laptop_icon</item>
+        <item>@drawable/iphone_icon</item>
+        <item>@drawable/ipad_icon</item>
+        <item>@drawable/television_icon</item>
+    </string-array>
+
+    <string-array name="item_prices">
+        <item>4.95</item>
+        <item>21.99</item>
+        <item>99.23</item>
+        <item>19.99</item>
+    </string-array>
+
+
+</resources>

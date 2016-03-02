@@ -6,6 +6,9 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class ActivityBundle extends AppCompatActivity {
 
@@ -16,14 +19,13 @@ public class ActivityBundle extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        //gets the array of values
+        String[] colorValues = getResources().getStringArray(R.array.colorOptions);
+        //extracts the index from the bundle
+        int id = getIntent().getExtras().getInt("idx");
+        //sets the textview to the color of choice
+        TextView t = (TextView)findViewById(R.id.txtChoice);
+        t.setText("Your color of choice is "+ colorValues[id]);
     }
 
 }

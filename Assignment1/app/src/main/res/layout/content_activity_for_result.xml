@@ -12,4 +12,23 @@
     tools:context="com.logan20.assignment1.ActivityForResult"
     tools:showIn="@layout/activity_activity_for_result">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:hint="Enter your name:" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false" />
 </RelativeLayout>

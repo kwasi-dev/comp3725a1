@@ -1,5 +1,10 @@
 package com.logan20.assignment1;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,9 +16,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
-
+    protected static int userOption;
+    private int reqCode =1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void launchActivity(int position){
+        //perform action based on input
         switch(position){
             case 0: startActivity(new Intent(this,UIComponents.class));
                     break;
@@ -41,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
             case 3: startActivity(new Intent(this,ToastAndSnackbar.class));
                     break;
-            case 4: startActivity(new Intent(this,ActivityBundle.class));
+            case 4: activityBundle(); //runs the method which will start the activity bundle intent
                     break;
-            case 5: startActivity(new Intent(this,ActivityForResult.class));
+            case 5: startActivityForResult(new Intent(this,ActivityForResult.class),reqCode);
                     break;
             case 6: startActivity(new Intent(this,CustomAdapter.class));
                     break;
@@ -57,6 +66,31 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        //runs when the activity for result intent terminates
+        if (requestCode==reqCode){
+            String name = "No data was passed in from the activity";
+            if (resultCode== Activity.RESULT_OK){
+                String entName = data.getStringExtra("data");
+                if (entName.equals(""))
+                    entName = "Anonymous";
+                name = "I hope you're enjoying the app "+entName;
+            }
+            Toast.makeText(getApplicationContext(), name, Toast.LENGTH_LONG).show();
+        }
+    }
+    public void activityBundle() {
+        new AlertDialog.Builder(MainActivity.this)//creates a new alert dialog builder
+                .setTitle(R.string.userInputTitle) //sets the title to 'userInputTitle' specified in strings.xml
+                .setItems(R.array.colorOptions, new DialogInterface.OnClickListener() {//sets the items to the array specified by 'colorOptions'
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        //when a certain activity is clicked, launch the new intent passing the index of that item to the new intent
+                        startActivity(new Intent(MainActivity.this, ActivityBundle.class).putExtra("idx", which));
+                    }
+                }).show(); //show the alert dialog
+    }
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -76,9 +110,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void viewList(View view){
-        Intent i = new Intent(MainActivity.this, CustomAdapter.class);
-        startActivity(i);
     }
 }

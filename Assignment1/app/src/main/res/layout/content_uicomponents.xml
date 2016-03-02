@@ -50,11 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Username"
         android:ems="10"
         android:id="@+id/txt_username"
         android:layout_below="@+id/btn_simp"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Username" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -63,8 +64,9 @@
         android:ems="10"
         android:id="@+id/txt_password"
         android:layout_below="@+id/txt_username"
-        android:layout_centerHorizontal="true"
-        android:text="Password" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_username"
+        android:hint="Password" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -74,34 +76,77 @@
         android:id="@+id/txt_email"
         android:layout_below="@+id/txt_password"
         android:layout_alignStart="@+id/txt_password"
-        android:text="Email" />
+        android:layout_alignEnd="@+id/txt_password"
+        android:hint="Email" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-        android:id="@+id/rbtn_female"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignTop="@+id/rbtn_male"
-        android:layout_alignStart="@+id/btn_simp"
-        android:checked="false" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt_email"
+        android:orientation="horizontal"
+        android:id="@+id/radiogrp">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male"
-        android:id="@+id/rbtn_male"
-        android:checked="false"
-        android:layout_below="@+id/txt_email"
-        android:layout_toStartOf="@+id/btn_simp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radioBtnMale" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioBtnFemale" />
+
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SAVE"
         android:id="@+id/btn_save"
-        android:layout_below="@+id/rbtn_female"
-        android:layout_alignStart="@+id/txt_email"
-        android:layout_alignEnd="@+id/txt_email" />
+        android:layout_below="@+id/txt_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/usernameTxtView"
+        android:layout_below="@+id/btn_save"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btn_save"
+        android:hint="Username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/emailTxtView"
+        android:layout_below="@+id/passwordTxtView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Email:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/sexTxtView"
+        android:layout_below="@+id/emailTxtView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/emailTxtView"
+        android:hint="Sex" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/passwordTxtView"
+        android:layout_below="@+id/usernameTxtView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/usernameTxtView"
+        android:hint="Password" />
 
 </RelativeLayout>
