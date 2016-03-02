@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="items_available">
+        <item>Dell Laptop</item>
+        <item>iPhone</item>
+        <item>iPod</item>
+        <item>LCD Television</item>
+    </string-array>
+    <string-array name="items_images">
+        <item>@drawable/laptop_icon</item>
+        <item>@drawable/iphone_icon</item>
+        <item>@drawable/television_icon</item>
+    </string-array>
     <string-array name="landingList">
         <item>UI Components</item>
         <item>Layouts</item>
         <item>Dialogs</item>
-        <item>Toast and Snackbar</item>
+        <item>Toast and SnackBar</item>
         <item>Activity Bundle</item>
         <item>Activity for Result</item>
         <item>Custom Adapter</item>

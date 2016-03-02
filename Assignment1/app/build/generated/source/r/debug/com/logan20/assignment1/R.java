@@ -25,8 +25,10 @@ public final class R {
         public static final int design_snackbar_out=0x7f05000d;
     }
     public static final class array {
-        public static final int landingList=0x7f0b0000;
-        public static final int toast_snack_list=0x7f0b0001;
+        public static final int items_available=0x7f0b0000;
+        public static final int items_images=0x7f0b0001;
+        public static final int landingList=0x7f0b0002;
+        public static final int toast_snack_list=0x7f0b0003;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -2203,7 +2205,12 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020044;
         public static final int design_fab_background=0x7f020045;
         public static final int design_snackbar_background=0x7f020046;
-        public static final int notification_template_icon_bg=0x7f020047;
+        public static final int ipad_icon=0x7f020047;
+        public static final int iphone_icon=0x7f020048;
+        public static final int laptop_icon=0x7f020049;
+        public static final int notification_template_icon_bg=0x7f02004c;
+        public static final int television_icon=0x7f02004a;
+        public static final int things_icon=0x7f02004b;
     }
     public static final class id {
         public static final int action0=0x7f0d0090;
@@ -2282,12 +2289,12 @@ containing a value of this type.
         public static final int item_detail_container=0x7f0d006e;
         public static final int item_list=0x7f0d008d;
         public static final int item_touch_helper_previous_elevation=0x7f0d0005;
+        public static final int items_List=0x7f0d0070;
         public static final int landingList=0x7f0d0079;
         public static final int left=0x7f0d0022;
         public static final int line1=0x7f0d0095;
         public static final int line3=0x7f0d0099;
         public static final int listMode=0x7f0d000b;
-        public static final int listView=0x7f0d0070;
         public static final int listView2=0x7f0d0071;
         public static final int list_item=0x7f0d0041;
         public static final int media_actions=0x7f0d0093;
